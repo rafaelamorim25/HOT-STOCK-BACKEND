@@ -1,24 +1,10 @@
 package com.rafaelamorim.arquiteturaspring.resources;
 
-import java.net.URI;
-import java.util.List;
-
-import javax.validation.Valid;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import com.rafaelamorim.arquiteturaspring.domain.Categoria;
-import com.rafaelamorim.arquiteturaspring.services.CategoriaService;
 import com.rafaelamorim.arquiteturaspring.services.GenericCrudService;
 
 public class GenericCrudResource<MODEL, PK, SERVICE extends GenericCrudService> {
 	
+	/*
 	@Autowired
 	SERVICE service;
 	
@@ -52,5 +38,5 @@ public class GenericCrudResource<MODEL, PK, SERVICE extends GenericCrudService> 
 	public ResponseEntity<Void> delete(@PathVariable Integer id) {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
-	}
+	} */
 }

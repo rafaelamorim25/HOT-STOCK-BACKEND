@@ -13,11 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.rafaelamorim.arquiteturaspring.domain.Categoria;
 import com.rafaelamorim.arquiteturaspring.services.CategoriaService;
 
 @RestController
+@CrossOrigin
 @RequestMapping(value="/categorias")
 public class CategoriaResource{
 	
@@ -28,7 +30,7 @@ public class CategoriaResource{
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		Categoria obj = service.find(id);
 		return ResponseEntity.ok().body(obj);
-	} 
+	}
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<?> findAll() {

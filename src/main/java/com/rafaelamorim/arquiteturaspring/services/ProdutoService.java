@@ -7,5 +7,7 @@ import com.rafaelamorim.arquiteturaspring.repositories.ProdutoRepository;
 
 @Service
 public class ProdutoService extends GenericCrudService<Produto, Integer, ProdutoRepository>{
+	
+	
 
 }

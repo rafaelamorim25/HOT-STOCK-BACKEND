@@ -9,5 +9,4 @@ public class ArquiteturaSpringApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ArquiteturaSpringApplication.class, args);
 	}
-
 }

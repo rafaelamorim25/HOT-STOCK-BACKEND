@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ import com.rafaelamorim.arquiteturaspring.domain.Produto;
 import com.rafaelamorim.arquiteturaspring.services.ProdutoService;
 
 @RestController
+@CrossOrigin
 @RequestMapping(value="/produtos")
 public class ProdutoResource {
 	
